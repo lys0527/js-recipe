@@ -1,1 +1,40 @@
-
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="display">こんにちは</div>
+    <img
+      id="img"
+      src="https://cdn.pixabay.com/photo/2020/03/17/18/03/fantasy-4941385_960_720.jpg"
+    />
+    <button id="button">ここをクリック</button>
+    <button id="button1">ここをクリック</button>
+    <button id="button2">ここをクリック</button>
+    <button id="buttonforimg">ここをクリック</button>
+  </body>
+  <script>
+    const display = document.getElementById("display")
+    const button = document.getElementById("button")
+    button.onclick = function() {
+      display.textContent = "こんばんは"
+    }
+    const button1 = document.getElementById("button1")
+    button1.onclick = function() {
+      display.textContent = "おはよう"
+    }
+    const button2 = document.getElementById("button2")
+    button2.onclick = function() {
+      display.style.color = "red"
+    }
+    const img = document.getElementById("img")
+    const buttonforimg = document.getElementById("buttonforimg")
+    buttonforimg.onclick = function() {
+      img.src =
+        "https://cdn.pixabay.com/photo/2014/10/11/21/18/sunset-485016_640.png"
+    }
+  </script>
+</html>

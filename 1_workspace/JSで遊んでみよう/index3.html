@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="price">1400円</div>
+    <div id="discountedprice">1000円</div>
+    <script>
+      const price = document.getElementById("price")
+      const discountedprice = document.getElementById("discountedprice")
+
+      let priceno = parseInt(price.textContent, 10)
+      let discountedpriceno = parseInt(discountedprice.textContent, 10)
+
+      console.log(priceno - discountedpriceno)
+    </script>
+  </body>
+</html>
